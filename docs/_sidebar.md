@@ -3,7 +3,7 @@
   * [快速开始](quickstart.md)
   * [组件属性](comp-props.md)
   * [组件API](comp-api.md)
-  * [生成源码](comp-src.md)
+  * [源码生成](comp-src.md)
 
 * 表单组件
 
