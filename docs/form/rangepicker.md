@@ -1,4 +1,4 @@
-# 文本 text
+# 范围选择框 rangepicker
 
 ## 规范定义
 

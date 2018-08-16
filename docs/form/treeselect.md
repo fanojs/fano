@@ -1,4 +1,4 @@
-# 文本 text
+# 树选择器 treeselect
 
 ## 规范定义
 

@@ -1,4 +1,4 @@
-# 文本 text
+# 密码 password
 
 ## 规范定义
 

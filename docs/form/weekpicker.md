@@ -1,4 +1,4 @@
-# 文本 text
+# 周选择框 weekpicker
 
 ## 规范定义
 

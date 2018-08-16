@@ -1,9 +1,9 @@
 * 入门
 
   * [快速开始](quickstart.md)
-  * [组件属性](comp-props.md)
-  * [组件API](comp-api.md)
-  * [源码生成](comp-src.md)
+  * [组件属性](compprops.md)
+  * [组件API](compapi.md)
+  * [源码生成](compsrc.md)
 
 * 表单组件
 
@@ -37,7 +37,7 @@
 * 标签页组件
 
   * [配置项](tabs/config.md)
-  * [事件订阅](tabs/events.md)
+  * [事件机制](tabs/events.md)
   * [组件API](tabs/api.md)
 
 * 布局组件
@@ -51,6 +51,7 @@
   * [表头分组](layout/hgroup.md)
   * [多表头](layout/multiheaders.md)
 
+* [组件通信](connect.md)
 * [命令行工具](cli.md)
 * [使用示例](examples.md)
 * [更新日志](changelog.md)

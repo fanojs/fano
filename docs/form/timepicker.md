@@ -1,4 +1,4 @@
-# 文本 text
+# 时间选择框 timepicker
 
 ## 规范定义
 
