@@ -12,6 +12,7 @@
 - `fromJson(json:object)` - 使用JSON配置生成表单
 - `fromUrl(url:string)` - 通过URL获取配置后再生成表单
 - `fromMeta(code:string)` - 通过元数据编码获取配置后再生成表单，需配置`metaUrl`
+- `injectType(code:string, fn:function(field:object))` - 注入自定义的控件类型
 
 ## 全局配置
 
