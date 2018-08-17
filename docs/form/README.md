@@ -17,12 +17,12 @@
 
 `options`的配置项如下：
 
-| 成员 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| dictUrl | 字典查询URL（GET请求） | string | - |
-| metaUrl | 表单元数据查询URL（GET请求） | string | - |
-| requestHandler | 请求处理函数 | function(url: string, opts: object) | - |
-| errorHandler | 异常处理函数 | function(errmsg: string) | - |
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| dictUrl | 字典查询URL（GET请求） | string |
+| metaUrl | 表单元数据查询URL（GET请求） | string |
+| requestHandler | 请求处理函数 | function(url: string, opts: object) |
+| errorHandler | 异常处理函数 | function(errmsg: string) |
 
 ## 表单配置
 
@@ -30,7 +30,7 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| colCount | 表单排列的列数量 | string | - |
+| colCount | 表单排列的列数量 | string | 4 |
 | dictUrl | 可传入覆盖全局`dictUrl` | string | - |
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
 | fields | 表单字段 | Array<FanoField> | - |
@@ -67,10 +67,10 @@ const UserPage = FanoForm.fromJson({ ... })
 
 当我们在使用动态组件时，也支持一些属性注入：
 
-| 成员 | 说明 | 类型 |
-| --- | --- | --- |
-| values | 用于设置表单数据，传入以`FanoField.name`为`key`的对象 | object |
-| fieldExpand | 字段扩展属性，传入以`FanoField.name`为`key`的对象 | object |
+| 成员 | 说明 |
+| --- | --- |
+| values | 用于设置表单数据，传入以`FanoField.name`为`key`的对象 |
+| fieldExpand | 字段扩展属性，传入以`FanoField.name`为`key`的对象 |
 
 ### 如何使用
 
