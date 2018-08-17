@@ -22,8 +22,8 @@
   * [周选择框 `weekpicker`](form/weekpicker.md)
   * [时间选择框 `timepicker`](form/timepicker.md)
   * [范围选择框 `rangepicker`](form/rangepicker.md)
-  * [参照表 `reftable`](form/custom/reftable.md)
-  * [参照树选择器 `reftreeselect`](form/custom/reftreeselect.md)
+  * [自定义：参照表 `reftable`](form/custom/reftable.md)
+  * [自定义：参照树选择器 `reftreeselect`](form/custom/reftreeselect.md)
 
 * 表格组件
 

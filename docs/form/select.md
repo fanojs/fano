@@ -36,6 +36,7 @@
 | --- | --- | --- |
 | onChange | 输入改变事件 | function(value:string) |
 | onSearch | 文本框值变化时回调 | function(value:string) |
+| selectedRender | 选中项的显示格式化 | function(value, option, values) |
 | labelRender | 选项显示值的格式化函数 | function(label, option, values) |
 
 >`onSearch`在`url`模式下，该函数需返回一个对象；若`remoteSearch`为`true`，该返回值会作为查询条件，序列化为请求参数`cond`的值，反之匹配本地数据。
