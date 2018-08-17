@@ -56,7 +56,7 @@
   * [表头分组](layout/hgroup.md)
   * [多表头](layout/multiheaders.md)
 
-* [组件通信](connect.md)
+* [特殊说明](description.md)
 * [命令行工具](cli.md)
 * [使用示例](examples.md)
 * [更新日志](changelog.md)
