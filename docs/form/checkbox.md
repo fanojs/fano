@@ -7,9 +7,9 @@
 | options | 选项列表 | Array<Option> | - |
 | dict| 字典编码 | string | - |
 | url | 选项查询URL（GET请求） | string | - |
-| multi | 是否支持多选 | boolean | true |
-| max | 当`multi`为`true`时，表示最大选择数量（`<options.length`） | number | - |
-| min | 当`multi`为`true`时，表示最小选择数量（`>1`） | number | - |
+| multiple | 是否支持多选 | boolean | true |
+| max | 当`multiple`为`true`时，表示最大选择数量（`<options.length`） | number | - |
+| min | 当`multiple`为`true`时，表示最小选择数量（`>1`） | number | - |
 | disabled | 禁用 | boolean | false |
 
 ### Option 属性

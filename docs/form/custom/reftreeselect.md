@@ -1,4 +1,4 @@
-# 参照选择器 `refselect`
+# 参照树选择器 `reftreeselect`
 
 ## 规范定义
 
