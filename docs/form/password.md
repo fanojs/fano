@@ -4,14 +4,14 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| placeholder | 占位符 | string | 同`label` |
-| disabled | 禁用 | boolean | false |
+| placeholder | 占位符 | `string` | 同`label` |
+| disabled | 禁用 | `boolean` | false |
 
 ## 扩展属性
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| onChange | 输入改变事件 | function(value:string) | - |
+| onChange | 输入改变事件 | `function(value:string)` | - |
 
 ## Ant Design
 

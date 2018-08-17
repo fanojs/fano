@@ -34,7 +34,7 @@
 | colCount | 表单排列的列数量 | string | 4 |
 | dictUrl | 可传入覆盖全局`dictUrl` | string | - |
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
-| fields | 表单字段 | Array<FanoField> | - |
+| fields | 表单字段 | `Array<FanoField>` | - |
 
 ### FanoField 属性
 
