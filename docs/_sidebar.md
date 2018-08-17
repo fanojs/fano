@@ -7,6 +7,7 @@
 
 * 表单组件
 
+  * [组件介绍](form/README.md)
   * [文本 text](form/text.md)
   * [密码 password](form/password.md)
   * [隐藏域 hidden](form/hidden.md)
@@ -25,23 +26,27 @@
 
 * 表格组件
 
+  * [组件介绍](table/README.md)
   * [普通表格](table/normal.md)
   * [树表](table/treetable.md)
   * [可编辑表格](table/editable.md)
 
 * 树组件
 
+  * [组件介绍](tree/README.md)
   * [普通树](tree/normal.md)
   * [可编辑树](tree/editable.md)
 
 * 标签页组件
 
+  * [组件介绍](tabs/README.md)
   * [配置项](tabs/config.md)
   * [事件机制](tabs/events.md)
   * [组件API](tabs/api.md)
 
 * 布局组件
 
+  * [组件介绍](layout/README.md)
   * [单表布局](layout/table.md)
   * [主子表布局](layout/child.md)
   * [多子表布局](layout/children.md)
