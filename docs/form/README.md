@@ -42,7 +42,7 @@
 | name | 字段名（同一表单内唯一） | string |
 | type | 控件类型 | string |
 | label | 显示标签 | string |
-| props | 属性配置 | FanoFieldProp |
+| props | 标准属性 | FanoFieldProp |
 
 >所有属性为必填项。
 
@@ -52,7 +52,7 @@
 | --- | --- | --- |
 | defaultValue | 表单项默认值 | string |
 
->`props`由每个控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
+>标准属性`props`由每种控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
 
 ## 动态组件
 
@@ -70,7 +70,7 @@ const UserPage = FanoForm.fromJson({ ... })
 | 成员 | 说明 |
 | --- | --- |
 | values | 用于设置表单数据，传入以`FanoField.name`为`key`的对象 |
-| fieldExpand | 字段扩展属性，传入以`FanoField.name`为`key`的对象 |
+| fieldExpand | 扩展属性，传入以`FanoField.name`为`key`的对象 |
 
 ### 如何使用
 
@@ -86,4 +86,4 @@ const UserPage = FanoForm.fromJson({ ... })
 
 - 可通过`fieldExpand.xxx.componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
 - 可通过`fieldExpand.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
-- 与`props`类似，每个控件类型也可以自由扩展`fieldExpand.xxx`。
+- 与标准属性`props`类似，每种控件类型也可以自由扩展`fieldExpand.xxx`。
