@@ -1,4 +1,4 @@
-# 参照表 reftable
+# 参照选择器 `refselect`
 
 ## 规范定义
 

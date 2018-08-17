@@ -87,3 +87,7 @@ const UserPage = FanoForm.fromJson({ ... })
 - 可通过`fieldExpand.xxx.componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
 - 可通过`fieldExpand.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
 - 与标准属性`props`类似，每种控件类型也可以自由扩展`fieldExpand.xxx`。
+
+## 自定义控件
+
+当内置的控件无法满足我们需要的时候，也可以制作一个自定义的控件类型，自定义的控件类型需要手动注册后才能使用，详见[自定义控件](form/custom.md)。
