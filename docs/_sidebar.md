@@ -48,6 +48,7 @@
 * 布局组件
 
   * [组件介绍](layout/README.md)
+  * [表单布局](layout/form.md)
   * [单表布局](layout/table.md)
   * [主子表布局](layout/child.md)
   * [多子表布局](layout/children.md)
