@@ -25,6 +25,8 @@
 | requestHandler | 请求处理函数 | function(url: string, opts: object) |
 | errorHandler | 异常处理函数 | function(errmsg: string) |
 
+>`dictUrl`和`metaUrl`接口格式同`url`，详见[URL约定](/description?id=url约定)。
+
 ## 表单配置
 
 使用`fromXxx`方法时，`json`的配置项如下：

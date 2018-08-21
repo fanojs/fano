@@ -7,7 +7,7 @@
 | options | 选项列表 | `Array<Option>` | - |
 | dict| 字典编码 | `string` | - |
 | url | 选项查询URL（GET请求） | `string` | - |
-| buttonStyle | 显示为按钮样式 | `boolean` | false |
+| showButtonStyle | 显示为按钮样式 | `boolean` | false |
 | disabled | 禁用 | `boolean` | false |
 
 ### Option 属性
