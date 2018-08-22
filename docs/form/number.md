@@ -15,7 +15,7 @@
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` | - |
-| formatter | 指定输入框展示值的格式 | `function(value: number | string): string` | - |
+| formatter | 指定输入框展示值的格式 | function(value: number &brvbar; string): string | - |
 
 ## Ant Design
 
