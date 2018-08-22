@@ -91,6 +91,43 @@ const UserPage = FanoForm.fromJson({ ... })
 - 可通过`fieldExpand.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
 - 与标准属性`props`类似，每种控件类型也可以自由扩展`fieldExpand.xxx`。
 
+## 组件API
+
+通过给动态组件指定`ref`可以调用组件底层API，支持的API列表如下：
+
+- `getFieldsValue()` - 获取表单值
+- `setFieldsValue(values:object)` - 使用设置表单值
+- `setFieldsError(errors:FanoFormItemError)` - 设置表单项的错误信息
+
+### FanoFormItemError 属性
+
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| requiredMark | 是否显示必填符号 | boolean |
+| validateStatus | 校验状态，可选 'success', 'warning', 'error', 'validating' | string |
+| hasFeedback | 用于给输入框添加反馈图标 | boolean |
+| help | 设置校验文案 | string |
+
+### 调用示例
+
+```js
+const UserForm = FanoForm.fromJson(json)
+class IndexPage extends React.Component {
+  handleSubmit () {
+    console.log(this.refs.userForm.getFieldsValue())
+  }
+
+  render () {
+    return (
+      <div>
+        <UserForm ref={'userForm'} footer={null} />
+        <Button onClick={this.handleSubmit.bind(this)}>提交</Button>
+      </div>
+    )
+  }
+}
+```
+
 ## 自定义控件
 
 当内置的控件无法满足我们需要的时候，也可以制作一个自定义的控件类型，自定义的控件类型需要手动注册后才能使用，详见[自定义控件](form/custom.md)。
