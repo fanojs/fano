@@ -1,11 +1,11 @@
 # 快速开始
 
-这里以`fano-react-antd`的表单组件`FanoForm`为例，演示如何通过`Fano`快速创建用户表单。
+这里以`fano-antd`的表单组件`FanoForm`为例，演示如何通过`Fano`快速创建用户表单。
 
 首先你需要在项目中安装所需依赖：
 
 ```sh
-npm i fano-react-antd -S
+npm i fano-antd -S
 ```
 
 使用过程只需简单三步：
