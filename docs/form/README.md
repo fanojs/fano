@@ -36,24 +36,7 @@
 | colCount | 表单排列的列数量 | number | 4 |
 | dictUrl | 可传入覆盖全局`dictUrl` | string | - |
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
-| fields | 表单字段 | `Array<FanoField>` | - |
-
-### FanoField 属性
-
-| 成员 | 说明 | 类型 |
-| --- | --- | --- |
-| name | 字段名（同一表单内唯一） | string |
-| type | 控件类型 | string |
-| label | 显示标签 | string |
-| props | 标准属性 | FanoFieldProp |
-
->所有属性为必填项。
-
-### FanoFieldProp 属性
-
-| 成员 | 说明 | 类型 |
-| --- | --- | --- |
-| defaultValue | 表单项默认值 | string |
+| fields | 表单字段 | `Array<FanoFormField>` | - |
 
 >标准属性`props`由每种控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
 
@@ -72,24 +55,24 @@ const UserPage = FanoForm.fromJson({ ... })
 
 | 成员 | 说明 |
 | --- | --- |
-| values | 用于设置表单数据，传入以`FanoField.name`为`key`的对象 |
-| fieldExpand | 扩展属性，传入以`FanoField.name`为`key`的对象 |
+| values | 用于设置表单数据，传入以`FanoFormField.name`为`key`的对象 |
+| expandProps | 扩展属性，传入以`FanoFormField.name`为`key`的对象 |
 
 ### 如何使用
 
 ```jsx
 <UserPage
   values={...}
-  fieldExpand={...}
+  expandProps={...}
   ...
 />
 ```
 
 ### 注意事项
 
-- 可通过`fieldExpand.xxx.componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
-- 可通过`fieldExpand.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
-- 与标准属性`props`类似，每种控件类型也可以自由扩展`fieldExpand.xxx`。
+- 可通过`expandProps.xxx.componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
+- 可通过`expandProps.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
+- 与标准属性`props`类似，每种控件类型也可以自由扩展`expandProps.xxx`。
 
 ## 组件API
 
@@ -97,16 +80,7 @@ const UserPage = FanoForm.fromJson({ ... })
 
 - `getFieldsValue()` - 获取表单值
 - `setFieldsValue(values:object)` - 使用设置表单值
-- `setFieldsError(errors:FanoFormItemError)` - 设置表单项的错误信息
-
-### FanoFormItemError 属性
-
-| 成员 | 说明 | 类型 |
-| --- | --- | --- |
-| requiredMark | 是否显示必填符号 | boolean |
-| validateStatus | 校验状态，可选 'success', 'warning', 'error', 'validating' | string |
-| hasFeedback | 用于给输入框添加反馈图标 | boolean |
-| help | 设置校验文案 | string |
+- `setFieldsError(errors:FanoFormFieldError)` - 设置表单项的错误信息
 
 ### 调用示例
 

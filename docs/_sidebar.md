@@ -58,6 +58,8 @@
   * [表头分组](layout/hgroup.md)
   * [多表头](layout/multiheaders.md)
 
+* [数据字典](dict.md)
+* [国际化](i18n.md)
 * [特殊说明](description.md)
 * [命令行工具](cli.md)
 * [使用示例](examples.md)
