@@ -4,7 +4,7 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| placeholder | 占位符 | `string` | 同`label` |
+| placeholder | 占位符 | `string[]` | 同`label` |
 | disabled | 禁用 | `boolean` | false |
 | allowClear | 是否支持清除 | `boolean` | true |
 | format | 展示的日期格式，配置参考 `moment.js` | `string` | `YYYY-wo` |
