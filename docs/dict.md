@@ -21,7 +21,7 @@
 | --- | --- | --- |
 | label | 选项显示值 | `string` |
 | value | 选项隐藏值 | `string` |
-| options | 分组选项，当该值不为空时，`label`为组名，`value`值将被忽略 | `Array<FanoFormSelectOption>` |
+| children | 分组选项，当该值不为空时，`label`为组名，`value`值将被忽略 | `Array<FanoFormSelectOption>` |
 
 ## FanoFormField
 
