@@ -10,10 +10,10 @@
 | url | 选项查询URL（GET请求） | `string` | - |
 | placeholder | 占位符 | `string` | 同`title` |
 | allowClear | 是否支持清除 | `boolean` | true |
-| allowInput | 是否允许用户输入| `boolean` | false |
-| remoteSearch | `url`模式下，当`allowInput`为`true`时，是否对用户输入内容进行远程搜索 | `boolean` | true |
+| allowInput | 在下拉中显示搜索框（仅在单选模式下生效） | `boolean` | false |
 | max | 限制的最大选择数 | `number` | `treeData.length` |
 | disabled | 禁用 | `boolean` | false |
+| ignoreCase | 输入搜索时是否忽略大小写 | `boolean` | true |
 | expandAll | 是否展开所有子节点 | `boolean` | false |
 | expandedValues | 需要展开的树节点 | `string[]` | - |
 | expandedLevel | 需要展开的层级 | `number` | - |
@@ -34,8 +34,6 @@
 | selectedRender | 选中项的显示格式化 | `function(value, option)` |
 | titleRender | 选项显示值的格式化函数 | `function(title, option)` |
 | beforeFetch | 搜索前置处理 | `function(url:string, field:FanoFormField):string` |
-
->`onSearch`在`url`模式下，该函数需返回一个对象；若`remoteSearch`为`true`，该返回值会作为查询条件，序列化为请求参数`cond`的值，反之匹配本地数据。
 
 ## Ant Design
 
