@@ -11,9 +11,18 @@
 
 | 成员 | 说明 | 类型 |
 | --- | --- | --- |
-| label | 选项显示值 | `string` |
+| title | 选项显示值 | `string` |
 | value | 选项隐藏值 | `string` |
 | children | 子选项 | `Array<FanoFormTreeOption>` |
+| pid | 父级隐藏值（`simpleMode`模式下起效） | `string` |
+
+## FanoFormTreeKeyMap
+
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| titleKey | 显示值的字段名 | string |
+| valueKey | 隐藏值的字段名 | string |
+| pidKey | pid值的字段名 | string |
 
 ## FanoFormSelectOption
 
