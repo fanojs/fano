@@ -55,3 +55,35 @@
 | validateStatus | 校验状态，可选 'success', 'warning', 'error', 'validating' | string |
 | hasFeedback | 用于给输入框添加反馈图标 | boolean |
 | help | 设置校验文案 | string |
+
+## FanoTableColumn
+
+| 成员 | 说明 | 类型 | 必填 | 默认值 |
+| --- | --- | --- | --- | --- |
+| title | 列头显示文字 | string | √ | - |
+| dataIndex | 列数据在数据项中对应的 key，支持 a.b.c 的嵌套写法 | string | √ | - |
+| width | 列宽度 | number | - | - |
+| align | 设置列内容的对齐方式 | 'left' &brvbar; 'right' &brvbar; 'center' | - | 'left' |
+
+## FanoTableExpand
+
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| render | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 | function(text: string, record: object, index: number) |
+| title | 生成复杂表格标题 | any |
+| footer | 生成复杂表格尾部 | any |
+
+## FanoTableSetting
+
+| 成员 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| bordered | 是否显示边框 | boolean | false |
+| showHeader | 是否显示表格列头 | boolean | true |
+| checkbox | 是否显示多选框 | boolean | true |
+| fixedHeader | 是否固定列头 | boolean | true |
+| size | 表格尺寸 | 'default' &brvbar; 'middle' &brvbar; 'small' | default |
+| rowSelected | 行点击是否支持选中 | boolean | true |
+| customHeader | 是否支持自定义列显示 | boolean | true |
+| displayHeader | 默认显示的列 | string[] | - |
+| sortHeader | 支持排序的列 | string[] | - |
+| pagination | 是否支持分页 | boolean | true |
