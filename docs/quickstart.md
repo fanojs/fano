@@ -22,7 +22,7 @@ npm i fano-antd -S
 {
   "fields": [
     {
-      "name": "username",
+      "name": "user",
       "type": "text",
       "label": "账号",
       "props": {
@@ -31,7 +31,7 @@ npm i fano-antd -S
       }
     },
     {
-      "name": "password",
+      "name": "pass",
       "type": "password",
       "label": "密码",
       "props": {
@@ -73,7 +73,7 @@ import { FanoForm } from 'fano-react'
 const config = {
   "fields": [
     {
-      "name": "username",
+      "name": "user",
       "type": "text",
       "label": "账号",
       "props": {
@@ -82,7 +82,7 @@ const config = {
       }
     },
     {
-      "name": "password",
+      "name": "pass",
       "type": "password",
       "label": "密码",
       "props": {

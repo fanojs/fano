@@ -87,3 +87,16 @@
 | displayHeader | 默认显示的列 | string[] | - |
 | sortHeader | 支持排序的列 | string[] | - |
 | pagination | 是否支持分页 | boolean | true |
+
+## FanoFormFile
+
+| 成员 | 说明 | 类型 | 必填 |
+| --- | --- | --- | --- |
+| uid | 文件唯一标识，建议设置为负数，防止和内部产生的 id 冲突 | string | √ |
+| name | 文件名 | string | √ |
+| status | 上传状态 | 'uploading' &brvbar; 'done' &brvbar; 'error' &brvbar; 'removed' | √ |
+| url | 文件URL | string | √ |
+| type | 文件[Mime-Type](http://www.w3school.com.cn/media/media_mimeref.asp) | string | √ |
+| thumbUrl | 文件缩略图URL | string | - |
+| response | 服务端响应内容 | string | - |
+| linkProps | 下载链接额外的 HTML 属性 | string | - |

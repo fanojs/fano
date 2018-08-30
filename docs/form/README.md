@@ -56,6 +56,8 @@ const UserPage = FanoForm.fromJson({ ... })
 | 成员 | 说明 |
 | --- | --- |
 | values | 用于设置表单数据，传入以`FanoFormField.name`为`key`的对象 |
+| footer | 表单尾部（设`null`可覆盖默认按钮） |
+| footerLayout | 表单尾部布局（'append' &brvbar; 'row'） |
 | expandProps | 扩展属性，传入以`FanoFormField.name`为`key`的对象 |
 
 ### 如何使用
