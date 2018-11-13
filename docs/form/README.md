@@ -16,7 +16,7 @@
 
 ## 全局配置
 
-`options`的配置项如下：
+通过`config`方法设置全局配置，`options`支持的配置项如下：
 
 | 成员 | 说明 | 类型 |
 | --- | --- | --- |
@@ -33,10 +33,10 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| colCount | 表单排列的列数量 | number | 4 |
+| columns | 表单排列的列数量 | number | 4 |
 | dictUrl | 可传入覆盖全局`dictUrl` | string | - |
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
-| fields | 表单字段 | `Array<FanoFormField>` | - |
+| fields | 表单字段 | [][FanoFormField](/dict?id=fanoformfield) | - |
 
 >标准属性`props`由每种控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
 

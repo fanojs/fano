@@ -46,6 +46,10 @@
 | 成员 | 说明 | 类型 |
 | --- | --- | --- |
 | defaultValue | 表单项默认值 | string |
+| columns | 表单项占用列数，覆盖表单全局配置 | number |
+| width | 表单项宽度 | number &brvbar; string |
+| height | 表单项高度 | number &brvbar; string |
+| style | 表单项样式 | object |
 
 ## FanoFormFieldError
 
