@@ -20,7 +20,7 @@
 | --- | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` | - |
 | customRequest | 通过覆盖默认的上传行为，可以自定义自己的上传实现 | `function` | - |
-| data | 上传所需参数或返回上传参数的方法 | `object|(file) => object` | - |
+| data | 上传所需参数或返回上传参数的方法 | `object` &brvbar; `file => object` | - |
 
 ## Ant Design
 
