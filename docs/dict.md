@@ -60,38 +60,6 @@
 | hasFeedback | 用于给输入框添加反馈图标 | boolean |
 | help | 设置校验文案 | string |
 
-## FanoTableColumn
-
-| 成员 | 说明 | 类型 | 必填 | 默认值 |
-| --- | --- | --- | --- | --- |
-| title | 列头显示文字 | string | √ | - |
-| dataIndex | 列数据在数据项中对应的 key，支持 a.b.c 的嵌套写法 | string | √ | - |
-| width | 列宽度 | number | - | - |
-| align | 设置列内容的对齐方式 | 'left' &brvbar; 'right' &brvbar; 'center' | - | 'left' |
-
-## FanoTableExpand
-
-| 成员 | 说明 | 类型 |
-| --- | --- | --- |
-| render | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 | function(text: string, record: object, index: number) |
-| title | 生成复杂表格标题 | any |
-| footer | 生成复杂表格尾部 | any |
-
-## FanoTableSetting
-
-| 成员 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| bordered | 是否显示边框 | boolean | false |
-| showHeader | 是否显示表格列头 | boolean | true |
-| checkbox | 是否显示多选框 | boolean | true |
-| fixedHeader | 是否固定列头 | boolean | true |
-| size | 表格尺寸 | 'default' &brvbar; 'middle' &brvbar; 'small' | default |
-| rowSelected | 行点击是否支持选中 | boolean | true |
-| customHeader | 是否支持自定义列显示 | boolean | true |
-| displayHeader | 默认显示的列 | string[] | - |
-| sortHeader | 支持排序的列 | string[] | - |
-| pagination | 是否支持分页 | boolean | true |
-
 ## FanoFormFile
 
 | 成员 | 说明 | 类型 | 必填 |
@@ -104,3 +72,54 @@
 | thumbUrl | 文件缩略图URL | string | - |
 | response | 服务端响应内容 | string | - |
 | linkProps | 下载链接额外的 HTML 属性 | string | - |
+
+## FanoTableColumn
+
+| 成员 | 说明 | 类型 | 必填 | 默认值 |
+| --- | --- | --- | --- | --- |
+| title | 列头显示文字 | string | √ | - |
+| dataIndex | 列数据在数据项中对应的 key，支持 a.b.c 的嵌套写法 | string | √ | - |
+| width | 列宽度 | string &brvbar; number | - | 200 |
+| align | 设置列内容的对齐方式 | 'left' &brvbar; 'right' &brvbar; 'center' | - | 'left' |
+| fixed | 固定列方向 | 'left' &brvbar; 'right' | - | - |
+
+## FanoTableColumnExpand
+
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| render | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 | function(text: string, record: object, index: number) |
+
+## FanoTableExpand
+
+| 成员 | 说明 | 类型 |
+| --- | --- | --- |
+| title | 生成复杂表格标题 | any |
+| footer | 生成复杂表格尾部 | any |
+
+## FanoTableUserSetting
+
+> 允许用户在界面上进行调整的设置项
+
+| 成员 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| bordered | 是否显示边框 | boolean | false |
+| showHeader | 是否显示表格列头 | boolean | true |
+| checkbox | 是否显示选择框 | boolean | true |
+| fixedHeader | 是否固定列头 | boolean | true |
+| size | 表格尺寸 | 'default' &brvbar; 'middle' &brvbar; 'small' | default |
+| rowSelected | 行点击是否支持选中 | boolean | true |
+| rowSelectedType | 多选/单选，checkbox or radio | string | checkbox |
+| showCustomHeader | 是否支持自定义显示列 | boolean | true |
+| showSortHeader | 是否支持排序 | boolean | true |
+| resizeableHeader | 是否支持伸缩列 | boolean | true |
+| pageMode | 是否支持分页 | boolean | true |
+
+## FanoTableSetting
+
+> 表格设置是`FanoTableUserSetting`的扩展，此部分不支持用户在界面进行调整
+
+| 成员 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| rowKey | 行唯一键 | string | 'key' |
+| customHeader | 自定义显示的列 | string[] | - |
+| sortHeader | 支持排序的列 | string[] | - |

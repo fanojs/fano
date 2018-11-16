@@ -72,7 +72,7 @@ const UserPage = FanoForm.fromJson({ ... })
 
 ### 注意事项
 
-- 可通过`expandProps.xxx.componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
+- 可通过`expandProps.xxx.nativeProps`注入底层UI框架支持的原生属性，但不推荐使用。
 - 可通过`expandProps.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
 - 与标准属性`props`类似，每种控件类型也可以自由扩展`expandProps.xxx`。
 

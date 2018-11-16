@@ -29,15 +29,14 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| title | 表格标题 | string | - |
-| footer | 表格尾部 | string | - |
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
 | listUrl | 列表查询URL（GET请求） | string | - |
 | createUrl | 列表创建URL（POST请求） | string | - |
 | updateUrl | 列表修改URL（POST请求） | string | - |
 | deleteUrl | 列表删除URL（DELETE请求） | string | - |
-| setting | 表格设置 | FanoTableSetting | - |
-| columns | 表格字段 | `Array<FanoTableColumn>` | - |
+| columns | 表格字段 | [][FanoTableColumn](/dict?id=fanotablecolumn) | - |
+| setting | 表格设置 | [][FanoTableSetting](/dict?id=fanotablesetting) | - |
+| showActions | 显示的操作按钮 | string | 'del,sync,new,setting,delRow,editRow' |
 
 >所有URL数据格式遵循[URL约定](/description?id=url约定)。
 
@@ -57,7 +56,13 @@ const UserTable = FanoTable.fromJson({ ... })
 | 成员 | 说明 | 类型 |
 | --- | --- | --- |
 | values | 用于设置表格数据，传入以`FanoTableColumn.dataIndex`为`key`的对象 | object |
-| expandProps | 扩展属性，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableExpand |
+| columnExpand | 扩展属性，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableColumnExpand |
+| onAdd | 新增按钮事件 | function |
+| onDel | 删除按钮事件 | function([]record) |
+| onEdit | 编辑按钮事件 | function(record) |
+| onSetting | 设置按钮事件 | function(setting) |
+| expandSetting | 表格扩展配置（设置非JSON配置项） | FanoTableExpand |
+| nativeSetting | 底层UI框架原生配置（**不推荐**） | object |
 
 ### 如何使用
 
@@ -67,10 +72,6 @@ const UserTable = FanoTable.fromJson({ ... })
   ...
 />
 ```
-
-### 注意事项
-
-- 可通过`componentProps`注入底层UI框架支持的原生属性，但不推荐使用。
 
 ## 组件API
 
