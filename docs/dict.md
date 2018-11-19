@@ -82,6 +82,8 @@
 | width | 列宽度 | string &brvbar; number | - | 200 |
 | align | 设置列内容的对齐方式 | 'left' &brvbar; 'right' &brvbar; 'center' | - | 'left' |
 | fixed | 固定列方向 | 'left' &brvbar; 'right' | - | - |
+| tip | 是否显示提示气泡框 | boolean | - | false |
+| img | 是否为图片内容 | boolean | - | false |
 
 ## FanoTableColumnExpand
 
@@ -113,6 +115,7 @@
 | showSortHeader | 是否支持排序 | boolean | true |
 | resizeableHeader | 是否支持伸缩列 | boolean | true |
 | pageMode | 是否支持分页 | boolean | true |
+| rowNo | 是否显示行号 | boolean | false |
 
 ## FanoTableSetting
 
@@ -121,5 +124,7 @@
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | rowKey | 行唯一键 | string | 'key' |
+| width | 全局列宽 | string/number | 150 |
 | customHeader | 自定义显示的列 | string[] | - |
 | sortHeader | 支持排序的列 | string[] | - |
+| version | 版本信息 | any | - |
