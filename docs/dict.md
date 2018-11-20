@@ -116,6 +116,7 @@
 | resizeableHeader | 是否支持伸缩列 | boolean | true |
 | pageMode | 是否支持分页 | boolean | true |
 | rowNo | 是否显示行号 | boolean | false |
+| hideOnNoSelected | 未选择时隐藏提示 | boolean | false |
 
 ## FanoTableSetting
 
