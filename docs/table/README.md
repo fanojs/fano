@@ -63,6 +63,8 @@ const UserTable = FanoTable.fromJson({ ... })
 | onSetting | 设置按钮事件 | function(setting) |
 | expandSetting | 表格扩展配置（设置非JSON配置项） | FanoTableExpand |
 | nativeSetting | 底层UI框架原生配置（**不推荐**） | object |
+| tableActions | 自定义的全局操作项 | []Function(actionsSize):ReactNode | - |
+| rowActions | 自定义的行操作项 | []Function(record, actionsSize):ReactNode | - |
 
 ### 如何使用
 
