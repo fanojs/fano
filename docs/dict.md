@@ -124,7 +124,7 @@
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| rowKey | 行唯一键 | string | 'key' |
+| rowKey | 行唯一键 | string | '_id' |
 | width | 全局列宽 | string/number | 150 |
 | customHeader | 自定义显示的列 | string[] | - |
 | sortHeader | 支持排序的列 | string[] | - |
