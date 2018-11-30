@@ -85,3 +85,23 @@
 ![组件配置](https://raw.githubusercontent.com/fanojs/fano/master/docs/_media/form-config.png)
 
 > 只有同时支持这两种配置的组件，我们才认为它是一个完整的人，我呸，组件。(奸笑ing~~~)
+
+## 预置组件
+
+为了能够开箱即用，框架内置实现了一些常见组件，如下：
+
+- 文本组件 - `text`
+- 密码组件 - `password`
+- 隐藏域组件 - `hidden`
+- 整数组件 - `number`
+- 小数组件 - `digit`
+- 单选框组件 - `radio`
+- 多选框组件 - `checkbox`
+- 选择器组件 - `select`
+- 树选择器组件 - `treeselect`
+- 日期选择组件 - `datepicker`
+- 月选择组件 - `monthpicker`
+- 周选择组件 - `weekpicker`
+- 时间选择组件 - `timepicker`
+- 范围选择组件 - `rangepicker`
+- 图片组件 - `imgbox`
