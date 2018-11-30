@@ -8,6 +8,7 @@
 * 表单组件
 
   * [组件介绍](form/README.md)
+  * [设计说明](form/design.md)
   * [文本 `text`](form/text.md)
   * [密码 `password`](form/password.md)
   * [隐藏域 `hidden`](form/hidden.md)
