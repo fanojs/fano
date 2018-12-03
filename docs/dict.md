@@ -39,7 +39,7 @@
 | name | 字段名（同一表单内唯一） | string | √ |
 | type | 控件类型 | string | √ |
 | label | 显示标签 | string | √ |
-| props | 标准属性 | FanoFormFieldProp | √ |
+| props | 静态配置 | FanoFormFieldProp | √ |
 
 ## FanoFormFieldProp
 

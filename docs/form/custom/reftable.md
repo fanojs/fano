@@ -1,6 +1,6 @@
 # 参照表 `reftable`
 
-## 标准属性
+## 静态配置
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -10,13 +10,13 @@
 | listUrl | 列表查询URL（GET请求） | string | - |
 | columns | 表格字段 | `Array<FanoTableColumn>` | - |
 
-## 扩展属性
+## 动态配置
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` | - |
 | headers | 请求头参数 | object | - |
-| columnsExpand | 扩展属性，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableExpand |
+| columnsExpand | 列扩展，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableExpand |
 
 ## Ant Design
 

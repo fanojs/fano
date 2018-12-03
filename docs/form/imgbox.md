@@ -1,6 +1,6 @@
 # 图片 `imgbox`
 
-## 标准属性
+## 静态配置
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | accept | 上传时，允许选择的文件类型，详见[input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept) | `string` | - |
 | headers | 设置上传的请求头部 | `object` | - |
 
-## 扩展属性
+## 动态配置
 
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |

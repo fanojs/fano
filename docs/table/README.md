@@ -56,7 +56,7 @@ const UserTable = FanoTable.fromJson({ ... })
 | 成员 | 说明 | 类型 |
 | --- | --- | --- |
 | values | 用于设置表格数据，传入以`FanoTableColumn.dataIndex`为`key`的对象 | object |
-| columnExpand | 扩展属性，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableColumnExpand |
+| columnExpand | 列扩展，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableColumnExpand |
 | onAdd | 新增按钮事件 | function |
 | onDel | 删除按钮事件 | function([]record) |
 | onEdit | 编辑按钮事件 | function(record) |

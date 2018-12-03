@@ -38,7 +38,7 @@
 | metaUrl | 可传入覆盖全局`metaUrl` | string | - |
 | fields | 表单字段 | [][FanoFormField](/dict?id=fanoformfield) | - |
 
->标准属性`props`由每种控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
+>静态配置`props`由每种控件类型自由扩展，请前往对应的控件类型查看具体支持的属性。
 
 ## 动态组件
 
@@ -58,7 +58,7 @@ const UserPage = FanoForm.fromJson({ ... })
 | values | 用于设置表单数据，传入以`FanoFormField.name`为`key`的对象 |
 | footer | 表单尾部（设`null`可覆盖默认按钮） |
 | footerLayout | 表单尾部布局（'append' &brvbar; 'row'） |
-| expandProps | 扩展属性，传入以`FanoFormField.name`为`key`的对象 |
+| expandProps | 动态配置，传入以`FanoFormField.name`为`key`的对象 |
 
 ### 如何使用
 
@@ -74,7 +74,7 @@ const UserPage = FanoForm.fromJson({ ... })
 
 - 可通过`expandProps.xxx.nativeProps`注入底层UI框架支持的原生属性，但不推荐使用。
 - 可通过`expandProps.xxx.onValidate(value:any, record:object):boolean`注入字段的自定义校验规则。
-- 与标准属性`props`类似，每种控件类型也可以自由扩展`expandProps.xxx`。
+- 与静态配置`props`类似，每种控件类型也可以自由扩展`expandProps.xxx`。
 
 ## 组件API
 
