@@ -22,11 +22,3 @@
 | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` |
 | labelRender | 选项显示值的格式化函数 | `function(label, option)` |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

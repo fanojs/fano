@@ -17,11 +17,3 @@
 | --- | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` | - |
 | formatter | 指定输入框展示值的格式 | function(value: number &brvbar; string): string | - |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

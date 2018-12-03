@@ -18,11 +18,3 @@
 | disabledDate | 不可选择的日期 | `(currentDate: moment) => boolean` | - |
 | showTime | 是否显示时间选择面板 | `boolean` | false |
 | timeOptions | 当`showTime`为`true`时，表示时间选择框的配置属性，具体属性详见[时间选择框](form/timepicker.md) | `object` | - |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

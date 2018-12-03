@@ -16,11 +16,3 @@
 | onChange | 输入改变事件 | `function(value:string)` | - |
 | dateRender | 自定义日期单元格的内容 | `function(currentDate: moment, today: moment)` | - |
 | disabledDate | 不可选择的日期 | `(currentDate: moment) => boolean` | - |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

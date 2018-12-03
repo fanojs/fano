@@ -33,11 +33,3 @@
 | beforeFetch | 搜索前置处理 | `function(url:string, field:FanoFormField):string` |
 
 >`onSearch`在`url`模式下，该函数需返回一个对象；若`remoteSearch`为`true`，该返回值会作为查询条件，序列化为请求参数`cond`的值，反之匹配本地数据。
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

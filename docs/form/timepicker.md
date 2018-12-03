@@ -17,11 +17,3 @@
 | disabledHours | 禁止选择部分小时选项 | `function()` | - |
 | disabledMinutes | 禁止选择部分分钟选项 | `function(selectedHour)` | - |
 | disabledSeconds | 禁止选择部分秒选项 | `function(selectedHour, selectedMinute)` | - |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

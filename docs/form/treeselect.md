@@ -34,11 +34,3 @@
 | selectedRender | 选中项的显示格式化 | `function(value, option)` |
 | titleRender | 选项显示值的格式化函数 | `function(title, option)` |
 | beforeFetch | 搜索前置处理 | `function(url:string, field:FanoFormField):string` |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

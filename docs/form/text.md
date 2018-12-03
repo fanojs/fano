@@ -12,11 +12,3 @@
 | 成员 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | onChange | 输入改变事件 | `function(value:string)` | - |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无

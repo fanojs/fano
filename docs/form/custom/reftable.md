@@ -17,11 +17,3 @@
 | onChange | 输入改变事件 | `function(value:string)` | - |
 | headers | 请求头参数 | object | - |
 | columnsExpand | 列扩展，传入以`FanoTableColumn.dataIndex`为`key`的对象 | FanoTableExpand |
-
-## Ant Design
-
-暂无
-
-## Element
-
-暂无
