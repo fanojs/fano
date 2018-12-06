@@ -19,7 +19,39 @@
 - this.props.value - 父级组件通过`value`属性将表单项值传递给当前组件；
 - this.props.onChange - 当前组件通过`onChange`属性将变更值传递给父级组件。
 
-> 组件从作用上可以分为两类：一类是无子级的叫做控件类组件，此类组件主要用于定义交互细节；另一类组件是有子级的容器类组件，比如折叠分组，子表单等。但不管哪种类型的**组件都遵循统一通信原则**。
+## 组件职责
+
+组件从作用上可分为两类：
+
+- 控件类组件 - 无子级元素，此类组件主要用于定义交互细节，需要处理`props.value`；
+- 容器类组件 - 有子级元素，比如折叠分组，子表单等，需要处理`props.children`。
+
+控件类组件示例：
+
+```jsx
+const ControlComponent = props => {
+  const { config, children, value } = props
+  return (
+    <div>{config.label}：{props.value}</div>
+  )
+}
+```
+
+容器类组件示例：
+
+```jsx
+const ContainerComponent = props => {
+  const { config, children } = props
+  return (
+    <div>
+      <h3>{config.label}</h3>
+      <div>{props.children}</div>
+    </div>
+  )
+}
+```
+
+> 注意：不管哪种类型的**组件都遵循统一通信原则**。
 
 ## 组件配置
 
