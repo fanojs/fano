@@ -55,30 +55,52 @@ const ContainerComponent = props => {
 
 ## 组件配置
 
-为规范使用，降低学习成本，我们规定**所有组件**在配置时都**使用相同的配置结构**，如下：
+为规范使用，降低学习成本，我们约定**所有组件**的配置结构都保持一致：
 
 ```json
 {
   "name": "username",
   "type": "text",
   "label": "账号",
+  "condition": "{{_.get(parentValue, 'spots') === 'fixed'}}"
+  "repeatRender": true,
   "props": {
-    "placeholder": "请输入账号",
-    "required": "账号不能为空"
+    ...
   }
 }
 ```
 
-各参数的含义是：
+### 组件配置参数
+
+以上配置中各参数的含义是：
 
 | 配置项 | 描述 | 类型 | 是否必须 |
 | - | - | - | - |
 | name | 字段名 | string | √ |
 | label | 字段标签 | string | - |
 | type | 组件类型 | string | √ |
+| condition | 组件渲染条件（返回为布尔值的模板表达式） | string | - |
+| repeatRender | 是否需要重复渲染 | boolean | false |
 | props | 组件配置 | object | √ |
 
-上面也提过，**每类组件都是一种配置解析器**，虽然每个组件的配置都是固定这几个参数，不同类型的组件对于`props`参数的解析规则不同，故每个组件所支持的**组件配置**也自然不同。
+### 组件渲染条件
+
+其中在定义**组件渲染条件**（`condition`）的模板表达式时，可使用以下参数：
+
+| 参数 | 描述 |
+| --- | --- |
+| rootConfig | 根配置 |
+| rootValue | 根值 |
+| parentConfig | 父级配置 |
+| parentValue | 父级值 |
+| parentPath | 父级值路径 |
+| _ | `lodash` |
+
+> `condition`的表达式值最终需返回布尔值。
+
+### 组件配置差异
+
+**每类组件都是一种配置解析器**，但不同类型的组件对于`props`参数的解析规则不同，所以所支持的**组件配置项**也自然不同。
 
 例如**输入组件**的配置是这样的：
 
